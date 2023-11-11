@@ -1,20 +1,20 @@
-        > from socket import *
-        > 
-        > from threading import *
+>         from socket import *
+>         
+>         from threading import *
 
 - This **imports** the necessary modules. The **socket** module provides a way for the program to communicate over the network, and the **threading** module is used for creating and managing threads.
 
-> clients = set()
+>         clients = set()
 
 - This **creates** an empty set called clients. The purpose of this set is to keep track of connected clients.
 
-> def client_Thread(client_Socket, client_Address):
+>         def client_Thread(client_Socket, client_Address):
 > 
->     while True:
+>                 while True:
 > 
->         msg = client_Socket.recv(1024).decode("utf-8")
+>                 msg = client_Socket.recv(1024).decode("utf-8")
 > 
->         print(f"{str(client_Address[1])}: {msg}")
+>                 print(f"{str(client_Address[1])}: {msg}")
         
 - This **defines** a function called client_Thread that will be executed in a separate thread for each connected client. It **runs** in an infinite loop, **receiving** messages (up to 1024 bytes) from the client socket and **printing** them along with the client's port number.
 
