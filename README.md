@@ -1,5 +1,5 @@
->` from socket import *
-> from threading import *`
+>` from socket import *`
+>` from threading import *`
 
 - This **imports** the necessary modules. The **socket** module provides a way for the program to communicate over the network, and the **threading** module is used for creating and managing threads.
 
