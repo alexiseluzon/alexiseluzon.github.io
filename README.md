@@ -76,13 +76,13 @@
 >         
 >         from tkinter import *
 
-- This **imports** the necessary modules: socket for network communication, threading for creating threads, and tkinter for creating a graphical user interface.
+- This **imports** the necessary modules: **socket** for network communication, **threading** for creating threads, and **tkinter** for creating a graphical user interface.
 
 >         client_Socket = socket(AF_INET, SOCK_STREAM)
 >         
 >         client_Socket.setsockopt(SOL_SOCKET, SO_REUSEADDR, 1)
 
-- A client socket (client_Socket) is **created** using the IPv4 address family (AF_INET) and the TCP socket type (SOCK_STREAM). The setsockopt method is used to set the SO_REUSEADDR option, allowing the **reuse** of the local address.
+- A client socket (client_Socket) is **created** using the IPv4 address family (AF_INET) and the TCP socket type (SOCK_STREAM). The setsockopt method is used to **set** the SO_REUSEADDR option, allowing the **reuse** of the local address.
 
 >         client_Socket.connect(("192.168.100.143", 7500))
 
@@ -92,7 +92,7 @@
 >         
 >         chat.title("Simple Real-Time Chat-App using Python Sockets")
 
-- An instance of the Tkinter Tk class is **created**, representing the main window of the GUI application. The title of the window is **set**.
+- An instance of the Tkinter Tk class is created, **representing** the main window of the GUI application. The title of the window is **set**.
 
 >         msg = Text(chat, width=50)
 >         
@@ -120,7 +120,7 @@
 >         
 >         btnsendmsg.grid(row=2, column=0, padx=10, pady=10)
 
-- A Button widget is created for **sending** messages. It is **placed** in the third row of the grid layout, and the sendMsg function is set as the command to be **executed** when the button is clicked.
+- A Button widget is created for **sending** messages. It is **placed** in the third row of the grid layout, and the sendMsg function is **set** as the command to be **executed** when the button is clicked.
 
 >         def receiveMsg():
 >         
@@ -144,4 +144,4 @@
 
 - The Tkinter main loop is **started**, allowing the GUI to be responsive and **handle** user interactions. The program continues to **run** until the user **closes** the Tkinter window.
 
-[^]: All Rights Reserved: Alexis E. Luzon 2023 
+[^C]: All Rights Reserved: Alexis E. Luzon 2023 
