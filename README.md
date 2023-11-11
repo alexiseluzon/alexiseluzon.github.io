@@ -143,5 +143,3 @@
 >         chat.mainloop()
 
 - The Tkinter main loop is **started**, allowing the GUI to be responsive and **handle** user interactions. The program continues to **run** until the user **closes** the Tkinter window.
-
-[^C]: All Rights Reserved: Alexis E. Luzon 2023 
