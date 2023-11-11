@@ -1,6 +1,6 @@
 To **create** a simple real-time chat-app using python sockets with tkinter, I am going to **create** 2 python files namely server.py and client.py
 
-## server.py:
+# server.py:
 
 >         from socket import *
 >         
@@ -74,7 +74,7 @@ To **create** a simple real-time chat-app using python sockets with tkinter, I a
     
 - This is the main loop that **accepts** incoming connections. When a client connects, a new client socket and address are **obtained** from the accept method. The client socket is **added** to the clients set, and a message indicating the connection is **printed**. A new thread is **created** to handle the communication with the client, and it starts by **calling** the client_Thread function. This allows the server to **handle** multiple clients concurrently.
 
-## client.py:
+# client.py:
 
 >         from socket import *
 >         
